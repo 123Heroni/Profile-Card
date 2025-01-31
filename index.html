@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="profile-header">
+      <img src="profile-pic.jpg" alt="Profile Picture" data-testid="profilePicture" class="profile-picture">
+    </div>
+   
+    <div class="profile-body">
+      <h1 data-testid="fullName">Your Full Name</h1>
+      <h2 data-testid="jobTitle">Frontend Developer</h2>
+     
+      <p data-testid="shortBio">
+        Passionate frontend developer focused on creating beautiful, interactive, and user-friendly web experiences.
+      </p>
+     
+      <p data-testid="currentLocation">
+        📍 Lagos, Nigeria
+      </p>
+     
+      <p data-testid="emailAddress">
+        ✉️ <a href="mailto:heritageoni16@gmail.com">heritageoni16@gmail.com</a>
+      </p>
+
+      <div data-testid="socialLinks" class="social-links">
+        <a href="https://github.com/123Heroni" target="_blank" class="btn github">GitHub</a>
+        <a href="https://linkedin.com/in/heritage-oni-56135b321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn linkedin">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="profile-footer">
+      <p data-testid="currentTimeUTC+1">
+        🕒 UTC Time: <span id="time"></span>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
